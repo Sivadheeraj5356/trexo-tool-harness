@@ -1,0 +1,31 @@
+{
+  "dataset": "synthetic-v1",
+  "baseline": "fixture-v1",
+  "candidate": "fixture-v2",
+  "release": "BLOCK",
+  "results": [
+    {
+      "case": "lookup",
+      "baseline_errors": [],
+      "candidate_errors": [
+        "invalid tool arguments"
+      ]
+    },
+    {
+      "case": "no_match",
+      "baseline_errors": [],
+      "candidate_errors": [
+        "result mismatch"
+      ]
+    },
+    {
+      "case": "timeout",
+      "baseline_errors": [],
+      "candidate_errors": [
+        "retry budget exceeded or invalid",
+        "latency budget exceeded or invalid"
+      ]
+    }
+  ],
+  "limits": "Fictional traces and latency. No live model, MCP transport, AWS performance or patent correctness validated."
+}
